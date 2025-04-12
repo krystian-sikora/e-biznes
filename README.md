@@ -1,17 +1,17 @@
 ## Zadanie 1 Docker
 
-:x: 3.0 Obraz ubuntu z Pythonem w wersji 3.10 [Link do commita 1](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 3.0 Obraz ubuntu z Pythonem w wersji 3.10
 
-:x: 3.5 Obraz ubuntu:24.02 z Javą w wersji 8 oraz Kotlinem [Link do commita 2](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 3.5 Obraz ubuntu:24.02 z Javą w wersji 8 oraz Kotlinem
 
-:x: 4.0 Do powyższego należy dodać najnowszego Gradle’a oraz paczkę JDBC SQLite w ramach projektu na Gradle (build.gradle) [Link do commita 3](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 4.0 Do powyższego należy dodać najnowszego Gradle’a oraz paczkę JDBC SQLite w ramach projektu na Gradle (build.gradle)
 
-:x: 4.5 Stworzyć przykład typu HelloWorld oraz uruchomienie aplikacji przez CMD oraz gradle [Link do commita 4](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 4.5 Stworzyć przykład typu HelloWorld oraz uruchomienie aplikacji przez CMD oraz gradle
 
-:x: 5.0 Dodać konfigurację docker-compose [Link do commita 5](https://github.com/kprzystalski/workshop_template/commit/hash)
-
+✅ 5.0 Dodać konfigurację docker-compose [Link do commita](https://github.com/krystian-sikora/e-biznes/commit/4699dc800e69e4ffa85948f83c317308041244bb)
 
 Kod: [docker](./docker)
+
 Dockerhub: [dockerhub](https://hub.docker.com/r/ksikora7183/e-biznes/tags)
 
 
