@@ -1,4 +1,4 @@
-**Zadanie 1** Docker
+## Zadanie 1 Docker
 
 :x: 3.0 Obraz ubuntu z Pythonem w wersji 3.10 [Link do commita 1](https://github.com/kprzystalski/workshop_template/commit/hash)
 
@@ -11,9 +11,11 @@
 :x: 5.0 Dodać konfigurację docker-compose [Link do commita 5](https://github.com/kprzystalski/workshop_template/commit/hash)
 
 
-Kod: (folder lub branch)
+Kod: [docker](./docker)
+Dockerhub: [dockerhub](https://hub.docker.com/r/ksikora7183/e-biznes/tags)
 
-**Zadanie 2** Scala
+
+## Zadanie 2 Scala
 
 :x: 3.0 Należy stworzyć kontroler do Produktów [Link do commita 1](https://github.com/kprzystalski/workshop_template/commit/hash)
 
@@ -28,7 +30,7 @@ Kod: (folder lub branch)
 
 Kod: (folder lub branch)
 
-**Zadanie 3** Kotlin
+## Zadanie 3 Kotlin
 
 :x: 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord [Link do commita 1](https://github.com/kprzystalski/workshop_template/commit/hash)
 

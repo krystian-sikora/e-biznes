@@ -1,0 +1,9 @@
+services:
+  app:
+    build: ../docker
+    image: ksikora7183/e-biznes:latest
+    container_name: docker_app
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: ["gradle", "run"]
