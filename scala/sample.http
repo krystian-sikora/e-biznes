@@ -1,0 +1,84 @@
+### GET all products
+GET localhost:9000/products
+
+### GET product by ID
+GET localhost:9000/products/1
+
+### POST create product
+POST localhost:9000/products
+Content-Type: application/json
+
+{
+    "name": "New Product",
+    "description": "This is a new product",
+    "price": 19.99
+}
+
+### PUT update product
+PUT localhost:9000/products/1
+Content-Type: application/json
+
+{
+    "name": "Updated Product",
+    "description": "This is an updated product",
+    "price": 29.99
+}
+
+### DELETE product
+DELETE localhost:9000/products/1
+
+
+
+### GET all categories
+GET localhost:9000/categories
+
+### GET category by ID
+GET localhost:9000/categories/1
+
+### POST create category
+POST localhost:9000/categories
+Content-Type: application/json
+
+{
+  "name": "New Category",
+  "description": "This is a new category"
+}
+
+### PUT update product
+PUT localhost:9000/categories/1
+Content-Type: application/json
+
+{
+  "name": "Updated Product",
+  "description": "This is an updated product"
+}
+
+### DELETE product
+DELETE localhost:9000/categories/1
+
+
+
+### GET all carts
+GET localhost:9000/cart
+
+### GET cart by ID
+GET localhost:9000/cart/1
+
+### POST create cart
+POST localhost:9000/cart
+Content-Type: application/json
+
+{
+  "products": [1, 2, 3]
+}
+
+### PUT update cart
+PUT localhost:9000/cart/1
+Content-Type: application/json
+
+{
+  "products": [3]
+}
+
+### DELETE cart
+DELETE localhost:9000/cart/1

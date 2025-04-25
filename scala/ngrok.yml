@@ -1,0 +1,7 @@
+version: "3"
+tunnels:
+    web:
+        proto: http
+        addr: 9000
+agent:
+    authtoken: xyz
