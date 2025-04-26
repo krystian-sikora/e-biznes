@@ -17,15 +17,15 @@ Dockerhub: [dockerhub](https://hub.docker.com/r/ksikora7183/e-biznes/tags)
 
 ## Zadanie 2 Scala
 
-:x: 3.0 Należy stworzyć kontroler do Produktów [Link do commita 1](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 3.0 Należy stworzyć kontroler do Produktów
 
-:x: 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane pobierane z listy [Link do commita 2](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane pobierane z listy
 
-:x: 4.0 Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy zgodnie z CRUD [Link do commita 3](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 4.0 Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy zgodnie z CRUD [Link do commita](https://github.com/krystian-sikora/e-biznes/commit/27f84297b79c799fc447f1ff45508d2a8cbdf833)
 
-:x: 4.5 Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać skrypt uruchamiający aplikację via ngrok (nie podawać tokena ngroka w gotowym rozwiązaniu) [Link do commita 4](https://github.com/kprzystalski/workshop_template/commit/hash)
+:x: 4.5 Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać skrypt uruchamiający aplikację via ngrok (nie podawać tokena ngroka w gotowym rozwiązaniu)
 
-:x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD [Link do commita 5](https://github.com/kprzystalski/workshop_template/commit/hash)
+:x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD
 
 
 Kod: (folder lub branch)
