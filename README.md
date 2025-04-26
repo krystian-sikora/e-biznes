@@ -28,22 +28,22 @@ Dockerhub: [dockerhub](https://hub.docker.com/r/ksikora7183/e-biznes/tags)
 :x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD
 
 
-Kod: (folder lub branch)
+Kod: [scala](./scala)
 
 ## Zadanie 3 Kotlin
 
-:x: 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord [Link do commita 1](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord 
 
-:x: 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji (bota) [Link do commita 2](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji (bota) 
 
-:x: 4.0 Zwróci listę kategorii na określone żądanie użytkownika [Link do commita 3](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 4.0 Zwróci listę kategorii na określone żądanie użytkownika 
 
-:x: 4.5 Zwróci listę produktów wg żądanej kategorii [Link do commita 4](https://github.com/kprzystalski/workshop_template/commit/hash)
+✅ 4.5 Zwróci listę produktów wg żądanej kategorii [Link do commita 4]([https://github.com/kprzystalski/workshop_template/commit/hash](https://github.com/krystian-sikora/e-biznes/commit/5d8b5a12fcdba1813bacf3a203d66ca84ddd7782))
 
-:x: 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger, Webex [Link do commita 5](https://github.com/kprzystalski/workshop_template/commit/hash)
+:x: 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger, Webex
 
 
-Kod: (folder lub branch)
+Kod: [kotlin](./ktor)
 
 
 Kod nalezy umieścić w w folderach lub na branchach, ale nalezy pod kazdym zadaniem wskazac link do brancha lub nazwę katalogu na repozytorium.
