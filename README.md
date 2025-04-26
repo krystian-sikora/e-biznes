@@ -1,3 +1,5 @@
+## Wszystkie dema zawarte są w folderze [demos](./demos) w pliku demos.7z
+
 ## Zadanie 1 Docker
 
 ✅ 3.0 Obraz ubuntu z Pythonem w wersji 3.10
@@ -44,8 +46,3 @@ Kod: [scala](./scala)
 
 
 Kod: [kotlin](./ktor)
-
-
-Kod nalezy umieścić w w folderach lub na branchach, ale nalezy pod kazdym zadaniem wskazac link do brancha lub nazwę katalogu na repozytorium.
-
-Do kazdego zadania nalezy przygotowac demo za pomocą https://obsproject.com/, a film (skompresowany) nalezy umiescic w katalogu demos.
