@@ -38,7 +38,7 @@ Kod: [scala](./scala)
 
 ✅ 4.0 Zwróci listę kategorii na określone żądanie użytkownika 
 
-✅ 4.5 Zwróci listę produktów wg żądanej kategorii [Link do commita 4]([https://github.com/kprzystalski/workshop_template/commit/hash](https://github.com/krystian-sikora/e-biznes/commit/5d8b5a12fcdba1813bacf3a203d66ca84ddd7782))
+✅ 4.5 Zwróci listę produktów wg żądanej kategorii [Link do commita 4](https://github.com/krystian-sikora/e-biznes/commit/5d8b5a12fcdba1813bacf3a203d66ca84ddd7782)
 
 :x: 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger, Webex
 
