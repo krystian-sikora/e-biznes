@@ -1,6 +1,7 @@
 package config
 
 import (
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"golang/src/controller"
 	"golang/src/repository"
@@ -9,11 +10,22 @@ import (
 
 func Run() {
 	ConnectDatabase()
-	router := SetUpRouter()
+	router := gin.New()
+	router.Use(cors.New(GetConfig()))
+	SetUpRouter(router)
 	router.Run("localhost:8080")
 }
 
-func SetUp() (controller.ProductController, controller.CategoryController, controller.BasketController) {
+func GetConfig() cors.Config {
+	config := cors.DefaultConfig()
+	config.AllowOrigins = []string{"http://localhost:5173"}
+	config.AllowMethods = []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"}
+	config.AllowHeaders = []string{"Origin", "Content-Type", "Accept", "Authorization"}
+	config.AllowCredentials = true
+	return config
+}
+
+func SetUp() (controller.ProductController, controller.CategoryController, controller.BasketController, controller.PaymentController) {
 	productRepo := repository.NewProductRepository(GormDB)
 	productService := service.NewProductService(productRepo)
 	productController := controller.NewProductController(productService)
@@ -22,14 +34,17 @@ func SetUp() (controller.ProductController, controller.CategoryController, contr
 	categoryService := service.NewCategoryService(categoryRepo)
 	categoryController := controller.NewCategoryController(categoryService)
 
+	paymentRepository := repository.NewPaymentRepository(GormDB)
+	paymentController := controller.NewPaymentController(paymentRepository)
+
 	basketController := controller.NewBasketController(GormDB)
 
-	return *productController, *categoryController, *basketController
+	return *productController, *categoryController, *basketController, *paymentController
 }
 
-func SetUpRouter() *gin.Engine {
-	router := gin.New()
-	productsController, categoryController, basketController := SetUp()
+func SetUpRouter(router *gin.Engine) *gin.Engine {
+
+	productsController, categoryController, basketController, paymentController := SetUp()
 
 	router.POST("/products", productsController.Create)
 	router.GET("/products", productsController.GetAll)
@@ -48,6 +63,8 @@ func SetUpRouter() *gin.Engine {
 	router.GET("/baskets/:id", basketController.GetByID)
 	router.PUT("/baskets/:id", basketController.Update)
 	router.DELETE("/baskets/:id", basketController.Delete)
+
+	router.POST("/payments", paymentController.CreatePayment)
 
 	return router
 }

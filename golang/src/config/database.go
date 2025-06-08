@@ -9,7 +9,7 @@ import (
 var GormDB *gorm.DB
 
 func ConnectDatabase() {
-	db, err := gorm.Open(sqlite.Open("test.db"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open("/app/data/database.db"), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")
 	}
@@ -22,6 +22,10 @@ func ConnectDatabase() {
 		panic("failed to migrate database")
 	}
 	err = db.AutoMigrate(&model.Basket{})
+	if err != nil {
+		panic("failed to migrate database")
+	}
+	err = db.AutoMigrate(&model.Payment{})
 	if err != nil {
 		panic("failed to migrate database")
 	}
