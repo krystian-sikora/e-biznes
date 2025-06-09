@@ -10,7 +10,7 @@ export function Checkout() {
   const totalPrice = selectedProducts.reduce((total, product) => total + product.Price, 0).toFixed(2);
 
   const pay = async () => {
-    const response = await axios.post("http://backend:8080/payments", {Amount: Number.parseFloat(totalPrice)})
+    const response = await axios.post("http://localhost:8080/payments", {Amount: Number.parseFloat(totalPrice)})
     if (response.status === 201) {
       alert("Payment successful!");
       navigate("/");
