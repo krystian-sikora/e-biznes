@@ -13,7 +13,7 @@ func Run() {
 	router := gin.New()
 	router.Use(cors.New(GetConfig()))
 	SetUpRouter(router)
-	router.Run("localhost:8080")
+	router.Run("0.0.0.0:8080")
 }
 
 func GetConfig() cors.Config {

@@ -1,6 +1,7 @@
 package config
 
 import (
+	"fmt"
 	"golang/src/model"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
@@ -9,7 +10,8 @@ import (
 var GormDB *gorm.DB
 
 func ConnectDatabase() {
-	db, err := gorm.Open(sqlite.Open("/app/data/database.db"), &gorm.Config{})
+	fmt.Println("connecting to test db")
+	db, err := gorm.Open(sqlite.Open("/app/data/test.db"), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")
 	}
