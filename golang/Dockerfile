@@ -33,6 +33,7 @@ RUN mkdir -p /app/data && chmod 777 /app/data
 # Copy binary from builder
 COPY --from=builder /app/main .
 COPY test.db /app/data/test.db
+RUN chmod 777 /app/data/test.db
 
 # Create a non-root user to run the application
 RUN adduser -D appuser
