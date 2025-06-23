@@ -16,6 +16,8 @@ func NewCategoryController(categoryService service.CategoryService) *CategoryCon
 	return &CategoryController{categoryService: categoryService}
 }
 
+const InvalidIdFormat = "Invalid ID format"
+
 func (controller *CategoryController) Create(c *gin.Context) {
 	var category model.Category
 	if err := c.ShouldBindJSON(&category); err != nil {
@@ -38,7 +40,7 @@ func (controller *CategoryController) GetByID(c *gin.Context) {
 	floatId, err := strconv.ParseFloat(id, 64)
 
 	if err != nil {
-		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "Invalid ID format"})
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": InvalidIdFormat})
 		return
 	}
 
@@ -73,7 +75,7 @@ func (controller *CategoryController) Update(c *gin.Context) {
 	floatId, err := strconv.ParseFloat(id, 64)
 
 	if err != nil {
-		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "Invalid ID format"})
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": InvalidIdFormat})
 		return
 	}
 
@@ -98,7 +100,7 @@ func (controller *CategoryController) Delete(c *gin.Context) {
 	floatId, err := strconv.ParseFloat(id, 64)
 
 	if err != nil {
-		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "Invalid ID format"})
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": InvalidIdFormat})
 		return
 	}
 

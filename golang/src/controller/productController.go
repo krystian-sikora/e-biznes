@@ -42,7 +42,7 @@ func (pc *ProductController) GetByID(c *gin.Context) {
 	floatId, err := strconv.ParseFloat(id, 64)
 
 	if err != nil {
-		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "Invalid ID format"})
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": InvalidIdFormat})
 		return
 	}
 
@@ -79,7 +79,7 @@ func (pc *ProductController) Update(c *gin.Context) {
 	floatId, err := strconv.ParseFloat(id, 64)
 
 	if err != nil {
-		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "Invalid ID format"})
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": InvalidIdFormat})
 		return
 	}
 
@@ -106,7 +106,7 @@ func (pc *ProductController) Delete(c *gin.Context) {
 	floatId, err := strconv.ParseFloat(id, 64)
 
 	if err != nil {
-		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": "Invalid ID format"})
+		c.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"error": InvalidIdFormat})
 		return
 	}
 

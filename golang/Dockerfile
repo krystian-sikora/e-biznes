@@ -20,7 +20,7 @@ COPY . .
 RUN CGO_ENABLED=1 GOOS=linux go build -o /app/main ./src
 
 # Final stage
-FROM alpine:latest
+FROM alpine:3.22
 
 WORKDIR /app
 

@@ -48,21 +48,24 @@ func SetUpRouter(router *gin.Engine) *gin.Engine {
 
 	router.POST("/products", productsController.Create)
 	router.GET("/products", productsController.GetAll)
-	router.GET("/products/:id", productsController.GetByID)
-	router.PUT("/products/:id", productsController.Update)
-	router.DELETE("/products/:id", productsController.Delete)
+	idProductPath := "/products/:id"
+	router.GET(idProductPath, productsController.GetByID)
+	router.PUT(idProductPath, productsController.Update)
+	router.DELETE(idProductPath, productsController.Delete)
 
 	router.POST("/categories", categoryController.Create)
 	router.GET("/categories", categoryController.GetAll)
-	router.GET("/categories/:id", categoryController.GetByID)
-	router.PUT("/categories/:id", categoryController.Update)
-	router.DELETE("/categories/:id", categoryController.Delete)
+	idCategoryPath := "/categories/:id"
+	router.GET(idCategoryPath, categoryController.GetByID)
+	router.PUT(idCategoryPath, categoryController.Update)
+	router.DELETE(idCategoryPath, categoryController.Delete)
 
 	router.POST("/baskets", basketController.Create)
 	router.GET("/baskets", basketController.GetAll)
-	router.GET("/baskets/:id", basketController.GetByID)
-	router.PUT("/baskets/:id", basketController.Update)
-	router.DELETE("/baskets/:id", basketController.Delete)
+	idBasketPath := "/baskets/:id"
+	router.GET(idBasketPath, basketController.GetByID)
+	router.PUT(idBasketPath, basketController.Update)
+	router.DELETE(idBasketPath, basketController.Delete)
 
 	router.POST("/payments", paymentController.CreatePayment)
 

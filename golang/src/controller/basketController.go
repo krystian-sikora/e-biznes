@@ -15,6 +15,8 @@ func NewBasketController(db *gorm.DB) *BasketController {
 	return &BasketController{db: db}
 }
 
+const BasketNotFound = "Basket not found"
+
 func (controller *BasketController) Create(c *gin.Context) {
 	var basket model.Basket
 	if err := c.ShouldBindJSON(&basket); err != nil {
@@ -35,7 +37,7 @@ func (controller *BasketController) GetByID(c *gin.Context) {
 	var basket model.Basket
 	if err := controller.db.Preload("Products").First(&basket, id).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
-			c.AbortWithStatusJSON(404, gin.H{"error": "Basket not found"})
+			c.AbortWithStatusJSON(404, gin.H{"error": BasketNotFound})
 		} else {
 			c.AbortWithStatusJSON(500, gin.H{"error": err.Error()})
 		}
@@ -68,7 +70,7 @@ func (controller *BasketController) Update(c *gin.Context) {
 	var updatedBasket model.Basket
 	if err := controller.db.First(&updatedBasket, id).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
-			c.AbortWithStatusJSON(404, gin.H{"error": "Basket not found"})
+			c.AbortWithStatusJSON(404, gin.H{"error": BasketNotFound})
 		} else {
 			c.AbortWithStatusJSON(500, gin.H{"error": err.Error()})
 		}
@@ -81,7 +83,7 @@ func (controller *BasketController) Delete(c *gin.Context) {
 	id := c.Param("id")
 	if err := controller.db.Delete(&model.Basket{}, id).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
-			c.AbortWithStatusJSON(404, gin.H{"error": "Basket not found"})
+			c.AbortWithStatusJSON(404, gin.H{"error": BasketNotFound})
 		} else {
 			c.AbortWithStatusJSON(500, gin.H{"error": err.Error()})
 		}
