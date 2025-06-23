@@ -23,5 +23,8 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2
         with:
           projectBaseDir: golang
+          args: >
+            -Dsonar.projectKey=krystian-sikora_e-biznes
+            -Dsonar.organization=krystian-sikora
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
