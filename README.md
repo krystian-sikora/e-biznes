@@ -63,6 +63,8 @@ a produktem
 
 :x: 5.0 pogrupować zapytania w gorm’owe scope'y
 
+Kod: [go](./golang)
+
 ## Zadanie 5 Frontend
 
 ✅ 3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz
@@ -80,13 +82,14 @@ kliencką na dockerze via docker-compose
 
 ✅ 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
 
+Kod: [react](./react)
+
 ## Zadanie 6 Testy
 
-:x: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
+✅ 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
 (Kotlin, Python, Java, JS, Go, Scala)
 
-:x: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
-:x: asercji
+:x: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50 asercji
 
 :x: 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
 projektu z minimum 50 asercjami
@@ -95,6 +98,8 @@ projektu z minimum 50 asercjami
 minimum jednym scenariuszem negatywnym per endpoint
 
 :x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
+
+Kod: [cypress](./cypress)
 
 ## Zadanie 7 SonarQube
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=bugs)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)

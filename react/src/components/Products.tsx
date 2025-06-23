@@ -33,6 +33,7 @@ export function Products() {
     <div>
       <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "flex-start", width: "100%" }}>
         <button
+          className={"checkout-button"}
           style={{ backgroundColor: "whitesmoke", color: "black" }}
           onClick={goToCheckout}
           disabled={selected.length === 0}
@@ -45,6 +46,7 @@ export function Products() {
         <div style={{ display: "flex", flexWrap: "wrap", width: "75%", justifyContent: "center" }}>
           {products?.map((product) => (
             <div
+              className={"product-card"}
               style={{
                 width: 250,
                 backgroundColor: selected.find((p) => p.ID === product.ID) ? "#b3e5fc" : "whitesmoke",
@@ -57,8 +59,8 @@ export function Products() {
               key={product.ID}
               onClick={() => toggleSelect(product)}
             >
-              <h2>{product.Name}</h2>
-              <p>Price: ${product.Price}</p>
+              <h2 className={"product-name"}>{product.Name}</h2>
+              <p className={"product-price"}>Price: ${product.Price}</p>
               {product.Categories && product.Categories.length > 0 && (
                 <p>Categories: {product.Categories.map((category) => category.Name).join(", ")}</p>
               )}

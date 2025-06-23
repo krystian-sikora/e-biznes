@@ -69,5 +69,9 @@ func SetUpRouter(router *gin.Engine) *gin.Engine {
 
 	router.POST("/payments", paymentController.CreatePayment)
 
+	router.GET("/hello", func(c *gin.Context) {
+		c.JSON(200, gin.H{"message": "Hello, World!"})
+	})
+
 	return router
 }

@@ -25,9 +25,9 @@ export function Checkout() {
       {selectedProducts.length === 0 ? (
         <p>No products selected.</p>
       ) : (
-        <ul>
+        <ul className={"checkout-list"}>
           {selectedProducts.map((product) => (
-            <li key={product.ID}>
+            <li className={'checkout-item'} key={product.ID}>
               {product.Name} - ${product.Price}
             </li>
           ))}
@@ -36,11 +36,11 @@ export function Checkout() {
       {
         selectedProducts.length > 0 && (
           <div>
-            <p>
+            <p className={"total-price"}>
               Total: $
               {totalPrice}
             </p>
-            <button style={{ backgroundColor: "whitesmoke", color: "black" }} onClick={pay}>Pay</button>
+            <button className={'submit-button'} style={{ backgroundColor: "whitesmoke", color: "black" }} onClick={pay}>Pay</button>
           </div>
         )
       }
