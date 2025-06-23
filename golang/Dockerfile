@@ -24,16 +24,14 @@ FROM alpine:3.22
 
 WORKDIR /app
 
-# Install required packages including SQLite
-RUN apk --no-cache add ca-certificates sqlite
-
-# Create data directory with proper permissions
-RUN mkdir -p /app/data && chmod 777 /app/data
-
 # Copy binary from builder
 COPY --from=builder /app/main .
 COPY test.db /app/data/test.db
-RUN chmod 777 /app/data/test.db
+
+# Install required packages including SQLite & Create data directory with proper permissions
+RUN apk --no-cache add ca-certificates sqlite && \
+    mkdir -p /app/data && chmod 777 /app/data && \
+    chmod 777 /app/data/test.db
 
 # Create a non-root user to run the application
 RUN adduser -D appuser
