@@ -46,3 +46,58 @@ Kod: [scala](./scala)
 
 
 Kod: [kotlin](./ktor)
+
+## Zadanie 4 Go
+
+✅ 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
+miała kontroler Produktów zgodny z CRUD
+
+✅ 3.5 Należy stworzyć model Produktów wykorzystując gorm oraz
+wykorzystać model do obsługi produktów (CRUD) w kontrolerze (zamiast
+listy)
+
+✅ 4.0 Należy dodać model Koszyka oraz dodać odpowiedni endpoint
+
+✅ 4.5 Należy stworzyć model kategorii i dodać relację między kategorią,
+a produktem
+
+5.0 pogrupować zapytania w gorm’owe scope'y
+
+## Zadanie 5 Frontend
+
+✅ 3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz
+Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w
+Produktach powinniśmy pobierać dane o produktach z aplikacji
+serwerowej;
+
+✅ 3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing
+
+✅ 4.0 Dane pomiędzy wszystkimi komponentami powinny być przesyłane za
+pomocą React hooks
+
+✅ 4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz
+kliencką na dockerze via docker-compose
+
+5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
+
+## Zadanie 6 Testy
+
+3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
+(Kotlin, Python, Java, JS, Go, Scala)
+
+3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
+asercji
+
+4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
+projektu z minimum 50 asercjami
+
+4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
+minimum jednym scenariuszem negatywnym per endpoint
+
+5.0 Należy uruchomić testy funkcjonalne na Browserstacku
+
+## Zadanie 7 SonarQube
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=bugs)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)
