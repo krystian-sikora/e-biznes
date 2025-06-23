@@ -31,10 +31,10 @@ COPY test.db /app/data/test.db
 # Install required packages including SQLite & Create data directory with proper permissions
 RUN apk --no-cache add ca-certificates sqlite && \
     mkdir -p /app/data && chmod 777 /app/data && \
-    chmod 777 /app/data/test.db
+    chmod 777 /app/data/test.db && \
+    adduser -D appuser
 
 # Create a non-root user to run the application
-RUN adduser -D appuser
 USER appuser
 
 # Expose the port the app runs on
