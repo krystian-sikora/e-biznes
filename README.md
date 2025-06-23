@@ -61,7 +61,7 @@ listy)
 ✅ 4.5 Należy stworzyć model kategorii i dodać relację między kategorią,
 a produktem
 
-5.0 pogrupować zapytania w gorm’owe scope'y
+:x: 5.0 pogrupować zapytania w gorm’owe scope'y
 
 ## Zadanie 5 Frontend
 
@@ -78,26 +78,41 @@ pomocą React hooks
 ✅ 4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz
 kliencką na dockerze via docker-compose
 
-5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
+✅ 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
 
 ## Zadanie 6 Testy
 
-3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
+:x: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
 (Kotlin, Python, Java, JS, Go, Scala)
 
-3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
-asercji
+:x: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
+:x: asercji
 
-4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
+:x: 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
 projektu z minimum 50 asercjami
 
-4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
+:x: 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
 minimum jednym scenariuszem negatywnym per endpoint
 
-5.0 Należy uruchomić testy funkcjonalne na Browserstacku
+:x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
 
 ## Zadanie 7 SonarQube
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=bugs)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=krystian-sikora_e-biznes&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=krystian-sikora_e-biznes)
+
+✅ 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
+hookach gita
+
+✅ 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
+aplikacji serwerowej)
+
+✅ 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
+aplikacji serwerowej)
+
+✅ 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
+w kodzie w Sonarze (kod aplikacji serwerowej)
+
+:x: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
+aplikacji klienckiej
